@@ -1,26 +1,46 @@
 body {
     background: #eaf4fb;
+    margin: 0;
+    padding: 0;
 }
 .titulo {
-    color: #0a2342; /* Azul oscuro elegante */
+    color: #0a2342;
     text-align: center;
     font-family: 'Segoe UI', Arial, sans-serif;
+    margin-top: 30px;
+}
+.contenedor-central {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 40px;
 }
 .ajustado0 {
     width: 600px;
-    margin: 0 auto;
-    border-radius: 20px;
-    border: 2px solid #2980b9; /* Azul medio */
-    background: #d6eaf8;       /* Azul claro */
+    border-radius: 10px;
+    border: 2px solid #2980b9;
+    background: #d6eaf8;
     padding: 20px;
 }
 .ajustado {
     width: 600px;
-    margin: 0 auto;
-    border-radius: 20px;
-    border: 2px solid #2980b9; /* Azul profundo */
-    background: #d6eaf8;       /* Azul pastel */
+    border-radius: 10px;
+    border: 2px solid #2980b9;
+    background: #d6eaf8;
     padding: 20px;
+    margin-top: 40px;
+}
+.lotes {
+    width: 350px;
+    min-height: 400px;
+    border-radius: 10px;
+    border: 2px solid #2980b9;
+    background: #d6eaf8;
+    padding: 20px;
+}
+.info-consultas {
+    margin-left: 0;
 }
 legend {
     text-align: center;
@@ -28,7 +48,7 @@ legend {
     display: block;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: #0a2342; /* Azul profundo */
+    color: #0a2342;
     background: #eaf2fb;
     border-radius: 8px;
     padding: 4px 0;
@@ -37,7 +57,7 @@ legend {
 select.milista1 {
     width: 350px;
     height: 25px;
-    background-color: #2471a3; /* Azul vibrante */
+    background-color: #2471a3;
     color: #ffffff;
     font-size: 16px;
     border: 1px solid #058feb;
@@ -64,7 +84,11 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background: #154360;
 }
+
 label {
     color: #000000;
     font-family: 'Segoe UI', Arial, sans-serif;
+}
+#info-consultas {
+    padding: 10px;
 }
