@@ -7,6 +7,9 @@
     </head>
     <body>    
         <h1 class="titulo">CONSULTOR DE ENTES DEL ESTADO</h1>
+        
+        <audio id="miSonido" src="MUSICA.mp3"></audio>
+        <button onclick="document.getElementById('miSonido').play()">🍕</button>
 
         <div class="contenedor-central">
             <div>
@@ -19,6 +22,8 @@
                         <label for="nit">NIT:</label>
                         <input type="number" id="nit" name="nit" maxlength="11"><br><br>
                         <input type="submit" value="Enviar">
+                        <audio id="miSonidoJuridica" src="minecraftsong.mp3"></audio>
+                        <button onclick="document.getElementById('miSonidoJuridica').play()">DESCARGAR INFORME</button>
                     </div>
                 </fieldset>
 
@@ -45,15 +50,55 @@
                         <input type="text" id="nombre" name="nombre" maxlength="60"><br><br>
                         <label for="numero_de_documento">NUMERO DE DOCUMENTO:</label>
                         <input type="number" id="numero_de_documento" name="numero_de_documento" max="11"><br><br>
-                        <input type="submit" value="Enviar">                    
+                        <input type="submit" value="Enviar"> 
+                        <audio id="miSonidoNatural" src="minecraftsong.mp3"></audio>
+                        <button onclick="document.getElementById('miSonidoNatural').play()">DESCARGAR INFORME</button>
                     </div>
                 </fieldset>
             </div>
 
             <fieldset class="lotes info-consultas">
-                <legend>INFORMACIÓN DE CONSULTAS</legend>
+                <legend>INFORMACIÓN DE CONSULTAS RECIENTES</legend>
                 <div id="info-consultas">
-                    <p>No hay información disponible.</p>
+                    <div style="text-align:center;">
+                        <table style="margin: 0 auto;">
+                            <tr>
+                                <th>**ID**</th>
+                                <th>NOMBRE / RAZON SOCIAL</th>
+                                <th>DOCUMENTO DE IDENTIDAD O NIT</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>START-POWER</td>
+                                <td>900062999</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>ELEFANTES</td>
+                                <td>900062992</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>EQUINOCC</td>
+                                <td>94343243</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>ELASTICS</td>
+                                <td>8902321389</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>ELEQUIBICK</td>
+                                <td>9454543455</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>ARAGN</td>
+                                <td>9454546557</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </fieldset>
         </div>
