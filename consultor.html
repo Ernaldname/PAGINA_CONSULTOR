@@ -8,7 +8,6 @@
     <body>    
         <h1 class="titulo">CONSULTOR DE ENTES DEL ESTADO</h1>
         
-
         <div class="contenedor-central">
             <div>
                 <fieldset class="ajustado0">
@@ -21,7 +20,7 @@
                         <input type="number" id="nit" name="nit" maxlength="11"><br><br>
                         <input type="submit" value="Enviar">
                         <audio id="miSonidoJuridica" src="minecraftsong.mp3"></audio>
-                        <button onclick="document.getElementById('miSonidoJuridica').play()">DESCARGAR INFORME</button>
+                        <button class="boton-animado" data-audio="miSonidoJuridica">DESCARGAR INFORME</button>
                     </div>
                 </fieldset>
 
@@ -50,7 +49,7 @@
                         <input type="number" id="numero_de_documento" name="numero_de_documento" max="11"><br><br>
                         <input type="submit" value="Enviar"> 
                         <audio id="miSonidoNatural" src="minecraftsong.mp3"></audio>
-                        <button onclick="document.getElementById('miSonidoNatural').play()">DESCARGAR INFORME</button>
+                        <button class="boton-animado" data-audio="miSonidoNatural">DESCARGAR INFORME</button>
                     </div>
                 </fieldset>
             </div>
@@ -95,35 +94,62 @@
                                 <td>ARAGN</td>
                                 <td>9454546557</td>
                             </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>EQUINOCC</td>
+                                <td>94343243</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>ELASTICS</td>
+                                <td>8902321389</td>
+                            </tr>
                         </table>
+                        <br>                        
+                        <audio id="miSonidoJuridicaListado" src="minecraftsong.mp3"></audio>
+                        <button class="boton-animado" data-audio="miSonidoJuridicaListado">DESCARGAR LISTADO</button>
                     </div>
+                </fieldset>
+                </div>
                 </div>
             </fieldset>
         </div>
 
         <br><br>
-
-        <div>    
-        <audio id="miSonido" src="MUSICA.mp3"></audio>
-        <button onclick="document.getElementById('miSonido').play()"> WASHINE MACHINE 🍕</button>
-
-        <audio id="miSonido2" src="MUSICA2.mp3"></audio>
-        <button onclick="document.getElementById('miSonido2').play()"> IDEA 22 🍔</button>
-
-        <audio id="miSonido3" src="MUSICA3.mp3"></audio>
-        <button onclick="document.getElementById('miSonido3').play()"> IMMORTALS 🍟</button>
         
-        <audio id="miSonido4" src="MUSICA4.mp3"></audio>
-        <button onclick="document.getElementById('miSonido4').play()"> WHAT I`VE DONE 🍳</button>
+        <div>
+            <audio id="miSonido" src="MUSICA.mp3"></audio>
+            <button class="boton-animado" data-audio="miSonido">WASHINE MACHINE 🍕</button>
 
-        <audio id="miSonido5" src="MUSICA5.mp3"></audio>
-        <button onclick="document.getElementById('miSonido5').play()"> EVERYBODY DIES 🌭</button>
+            <audio id="miSonido2" src="MUSICA2.mp3"></audio>
+            <button class="boton-animado" data-audio="miSonido2">IDEA 22 🍔</button>
 
-        <audio id="miSonido6" src="MUSICA6.mp3"></audio>
-        <button onclick="document.getElementById('miSonido6').play()"> DISFIGURE BLANK 🥞</button>
+            <audio id="miSonido3" src="MUSICA3.mp3"></audio>
+            <button class="boton-animado" data-audio="miSonido3">IMMORTALS 🍟</button>
+
+            <audio id="miSonido4" src="MUSICA4.mp3"></audio>
+            <button class="boton-animado" data-audio="miSonido4">WHAT I'VE DONE 🍳</button>
+
+            <audio id="miSonido5" src="MUSICA5.mp3"></audio>
+            <button class="boton-animado" data-audio="miSonido5">EVERYBODY DIES 🌭</button>
+
+            <audio id="miSonido6" src="MUSICA6.mp3"></audio>
+            <button class="boton-animado" data-audio="miSonido6">DISFIGURE BLANK 🥞</button>
+
+            <audio id="miSonido7" src="MUSICA7.mp3"></audio>
+            <button class="boton-animado" data-audio="miSonido7">MEDALLO 🌮</button>
+
+            <button class="boton-animado" id="pausar-todos">♪♪- SILENCIAR -♪♪</button>
         </div>
-
         <div class="footer">
             <p>© 2025 Consultor de Entes del Estado. Todos los derechos reservados.</p>
+        </div>
+        <script src="script.js"></script>
     </body>
+    
+    <video autoplay muted loop id="video-fondo">
+        <source src="fondo.mp4" type="video/mp4">
+        Tu navegador no soporta el video de fondo.
+    </video>
+
 </html>
